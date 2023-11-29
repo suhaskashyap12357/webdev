@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Reviews</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffedbf;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffedbf;
+            color: #f51313;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8em 1.5em;
+            margin: 0 0.5em;
+            border-radius: 5px;
+            background-color: #2980b9;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1a5276;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        .restaurant {
+            background-color: #c0c0c0;
+            margin: 0 0 2em 0;
+            padding: 2em;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .restaurant img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .reviews {
+            margin-top: 2em;
+        }
+
+        .review {
+            background-color: #c0c0c0;
+            margin: 0 0 2em 0;
+            padding: 1.5em;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .review h3 {
+            color: #e74c3c;
+        }
+
+        form {
+            background-color: #c0c0c0;
+            margin: 0 0 2em 0;
+            padding: 2em;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 1em 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1.5em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: #e74c3c;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Foodie Reviews</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Add Review</a>
+    </nav>
+
+    <main>
+        <!-- Restaurant 1 -->
+        <div class="restaurant">
+            <img src="great-food-and-service.jpg" alt="Restaurant 1" width="800" height="400">
+            <h2>Delightful Diner</h2>
+            <p>Rating: 4.5/5</p>
+            <p>Great place to hang out. The food is delicious!</p>
+        </div>
+
+        <!-- Restaurant 2 -->
+        <div class="restaurant">
+            <img src="360_F_324739203_keeq8udvv0P2h1MLYJ0GLSlTBagoXS48.jpg" alt="Restaurant 2" width="800" height="400">
+            <h2>Cozy Cafe</h2>
+            <p>Rating: 3.8/5</p>
+            <p>Nice ambiance, but the service could be improved.</p>
+        </div>
+
+        <!-- Restaurant 3 -->
+        <div class="restaurant">
+            <img src="dsc01939-1638289406.jpg" alt="Restaurant 3" width="800" height="400">
+            <h2>Savorful Bites</h2>
+            <p>Rating: 4.2/5</p>
+            <p>Delicious food and friendly staff. Highly recommended!</p>
+        </div>
+
+        <!-- Add more restaurants with different colors -->
+
+        <div class="reviews">
+            <!-- Reviews for Restaurant 1 -->
+            <div class="review">
+                <h3>User123</h3>
+                <p>Had a wonderful experience at Delightful Diner. The atmosphere was cozy, and the food was delightful.</p>
+            </div>
+            <!-- Add more reviews for Restaurant 1 -->
+
+            <!-- Reviews for Restaurant 2 -->
+            <div class="review">
+                <h3>User456</h3>
+                <p>Cozy Cafe offers a unique culinary experience. However, the waiting time was a bit long.</p>
+            </div>
+            <!-- Add more reviews for Restaurant 2 -->
+
+            <!-- Reviews for Restaurant 3 -->
+            <div class="review">
+                <h3>User789</h3>
+                <p>Visited Savorful Bites with friends. The service was excellent, and the dishes were flavorsome.</p>
+            </div>
+            <!-- Add more reviews for Restaurant 3 -->
+
+            <!-- Add more reviews for other restaurants -->
+        </div>
+
+        <!-- Review Form -->
+        <form>
+            <h2>Add Your Review</h2>
+            <label for="restaurantName">Restaurant Name:</label>
+            <input type="text" id="restaurantName" name="restaurantName" required>
+
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" step="0.1" required>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <!-- Add more content to make the page lengthier -->
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Foodie Reviews. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
